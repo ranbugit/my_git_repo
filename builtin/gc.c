@@ -1577,12 +1577,12 @@ static const struct maintenance_task tasks[] = {
 	},
 	[TASK_PACK_REFS] = {
 		.name = "pack-refs",
-		.after_detach = maintenance_task_pack_refs,
+		.before_detach = maintenance_task_pack_refs,
 		.auto_condition = pack_refs_condition,
 	},
 	[TASK_REFLOG_EXPIRE] = {
 		.name = "reflog-expire",
-		.after_detach = maintenance_task_reflog_expire,
+		.before_detach = maintenance_task_reflog_expire,
 		.auto_condition = reflog_expire_condition,
 	},
 	[TASK_WORKTREE_PRUNE] = {
