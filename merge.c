@@ -1,4 +1,4 @@
-#Added for testing
+#Added for testing by other person
 #define USE_THE_REPOSITORY_VARIABLE
 
 #include "git-compat-util.h"
